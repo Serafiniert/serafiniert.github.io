@@ -67,3 +67,8 @@ img {
 .btn {
   pointer-events: none;
 }
+
+.btn-outline-primary {
+  color: #17A2B8;
+  border-color: #17A2B8;
+}
