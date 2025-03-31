@@ -20,9 +20,9 @@
       </div>
       <hr>
       <div class="tabs">
-        <div class="tab active" onclick="loadTabContent(event, 'tab1.html')">Work Contribution</div>
-        <div class="tab" onclick="loadTabContent(event, 'tab2.html')">University Projects</div>
-        <div class="tab" onclick="loadTabContent(event, 'tab3.html')">Side Projects</div>
+        <div class="tab active" onclick="loadTabContent(event, 'content/tab1.html')">Work Contribution</div>
+        <div class="tab" onclick="loadTabContent(event, 'content/tab2.html')">University Projects</div>
+        <div class="tab" onclick="loadTabContent(event, 'content/tab3.html')">Side Projects</div>
       </div>
       <div id="tab-content" class="content active">
         <!-- Tab content will be loaded here -->
@@ -51,7 +51,7 @@
       
       document.addEventListener('DOMContentLoaded', function() {
           const firstTab = document.querySelector('.tab.active');
-          loadTabContent(firstTab, 'tab1.html');
+          loadTabContent(firstTab, 'content/tab1.html');
       });
     </script>
   </body>
