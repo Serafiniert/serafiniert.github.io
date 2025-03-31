@@ -69,26 +69,21 @@ ul, li {
 
 .tabs {
   display: flex;
+  justify-content: center;
   cursor: pointer;
+  padding-bottom: 40px;
 }
 
 .tab {
   padding: 10px 20px;
   margin-right: 5px;
   border-radius: 5px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
 .tab.active {
-  border: 1px solid #17A2B8;
-}
-
-.content {
-  display: none;
-  padding: 20px;
-}
-
-.content.active {
-  display: block;
+  border-color: #17A2B8;
 }
 
 /* Dark Mode Styles */
