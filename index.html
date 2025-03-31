@@ -24,6 +24,14 @@
     </div>
 
     <hr>
+
+    <div class="tabs">
+      <div class="tab active" onclick="openTab(event, 'tab1')">Work Contribution</div>
+      <div class="tab" onclick="openTab(event, 'tab2')">University Projects</div>
+      <div class="tab" onclick="openTab(event, 'tab3')">Side Projects</div>
+  </div>
+  <div id="tab1" class="content active">
+
     <div class="occupation">
       <h2>KptnCook</h2>
       <ul>
@@ -363,6 +371,10 @@
     </div>
     <hr>
 
+    </div>
+
+    <div id="tab2" class="content">
+
     <div class="occupation">
       <h2>University Projects</h2>
       <ul>
@@ -524,6 +536,10 @@
     </div>
     <hr>
 
+    </div>
+
+    <div id="tab3" class="content">
+
     <div class="occupation">
       <h2>Side Projects</h2>
       <ul>
@@ -596,10 +612,19 @@
         </li>
       </ul>
     </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh3IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    function openTab(event, tabId) {
+        document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+</script>
 
 </body>
 

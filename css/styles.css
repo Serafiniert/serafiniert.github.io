@@ -82,3 +82,27 @@ ul, li {
   border-color: #17A2B8;
   margin-bottom: 20px;
 }
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.tab.active {
+  border: 1px solid #17A2B8;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+}
+
+.content.active {
+  display: block;
+}
