@@ -1,21 +1,4 @@
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(25, 25, 25);
-    color: white;
-  }
-
-  hr {
-    border-color: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: #F8F8FF;
-      color: black;
-  }
-}
-
+/* General Styles */
 nav {
   margin-bottom: 30px;
 }
@@ -23,6 +6,7 @@ nav {
 hr {
   margin-top: 24px;
   margin-bottom: 24px;
+  border-color: initial;
 }
 
 div.wrapper {
@@ -105,4 +89,24 @@ ul, li {
 
 .content.active {
   display: block;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+  }
+
+  hr {
+    border-color: white;
+  }
+}
+
+/* Light Mode Styles */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #F8F8FF;
+    color: black;
+  }
 }
