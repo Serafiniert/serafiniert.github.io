@@ -30,7 +30,7 @@ p {
 }
 
 img {
-  margin-right: 10px;
+  margin: 5px;
   max-width: 100%;
   max-height: 400px;
 }
@@ -42,6 +42,17 @@ ul {
 ul, li {
   margin: 0;
   padding: 0;
+}
+
+.top-ul {
+  list-style-type: circle;
+  margin: 5px;
+  padding: 5px;
+}
+
+.top-li {
+  margin: 5px;
+  padding: 3px;
 }
 
 #profile {
@@ -64,7 +75,7 @@ ul, li {
 .btn-outline-primary {
   color: #17A2B8;
   border-color: #17A2B8;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .tabs {
