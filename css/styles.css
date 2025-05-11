@@ -38,7 +38,8 @@ ul {
   list-style-type: none;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -62,6 +63,8 @@ ul, li {
 
 .img-box {
   max-width: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .p-2 {
@@ -83,6 +86,10 @@ ul, li {
   justify-content: center;
   cursor: pointer;
   padding-bottom: 40px;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(0deg, transparent, rgba(25, 25, 25, 0.95) 75%);
+  padding-top: 24px;
 }
 
 .tab {
@@ -114,5 +121,11 @@ ul, li {
   body {
     background-color: #F8F8FF;
     color: black;
+  }
+}
+
+@media (min-width: 640px) {
+  .img-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
