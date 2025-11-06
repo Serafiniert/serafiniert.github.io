@@ -1,4 +1,10 @@
 /* General Styles */
+
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
 nav {
   margin-bottom: 30px;
 }
@@ -6,7 +12,7 @@ nav {
 hr {
   margin-top: 24px;
   margin-bottom: 24px;
-  border-color: initial;
+  border-color: white;
 }
 
 div.wrapper {
@@ -102,26 +108,6 @@ li {
 
 .tab.active {
   border-color: #17A2B8;
-}
-
-/* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(25, 25, 25);
-    color: white;
-  }
-
-  hr {
-    border-color: white;
-  }
-}
-
-/* Light Mode Styles */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #F8F8FF;
-    color: black;
-  }
 }
 
 @media (min-width: 640px) {
