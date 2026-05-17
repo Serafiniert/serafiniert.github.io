@@ -1,60 +1,98 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
     <title>An iOS Engineer's Portfolio</title>
   </head>
   <body class="container">
     <nav class="navbar navbar-light bg-info rounded-bottom">
-      <a class="navbar-brand text-white" href="#">An iOS Engineer's Portfolio</a>
+      <a class="navbar-brand text-white" href="#"
+        >An iOS Engineer's Portfolio</a
+      >
     </nav>
     <div class="wrapper">
       <div class="d-flex flex-row">
-        <img id="profile" src="images/me-s.jpg" class="rounded-circle" alt="Code Snippet">
-          <ul>
-            <li>My name is <em>Tanyel Stoyloff</em>, I am a passionate iOS developer.</li>
-            <li><em>2020 - Present:</em> KptnCook - Cooking & Meal Planning App</li>
-            <li><em>2019 - 2020:</em> TBO - Digital Agency</li>
-            <li><em>2019 - 2022:</em> BHT - Informatics (Master of Science)</li>
-            <li><em>2016 - 2019:</em> HTW - Informatics (Bachelor of Science)</li>
-            <li><em>2010 - 2016:</em> Axel Springer SE - Graphics Designer</li>
-          </ul>
+        <img
+          id="profile"
+          src="images/me-s.jpg"
+          class="rounded-circle"
+          alt="Code Snippet"
+        />
+        <ul>
+          <li>
+            My name is <em>Tanyel Stoyloff</em>, I am a passionate iOS
+            developer.
+          </li>
+          <li><em>2026 - Present:</em> Transfermarkt - Football Player Market Value App</li>
+          <li><em>2020 - 2026:</em> KptnCook - Cooking & Meal Planning App</li>
+          <li><em>2019 - 2020:</em> TBO - Digital Agency</li>
+          <li><em>2019 - 2022:</em> BHT - Informatics (Master of Science)</li>
+          <li><em>2016 - 2019:</em> HTW - Informatics (Bachelor of Science)</li>
+          <li><em>2010 - 2016:</em> Axel Springer SE - Graphics Designer</li>
+        </ul>
       </div>
-      <hr>
+      <hr />
       <div class="tabs">
-        <div class="tab active" onclick="loadTabContent(event, 'content/tab1.html')">Work Contribution</div>
-        <div class="tab" onclick="loadTabContent(event, 'content/tab2.html')">University Projects</div>
-        <div class="tab" onclick="loadTabContent(event, 'content/tab3.html')">Side Projects</div>
+        <div
+          class="tab active"
+          onclick="loadTabContent(event, 'content/tab1.html')"
+        >
+          Work Contribution
+        </div>
+        <div class="tab" onclick="loadTabContent(event, 'content/tab2.html')">
+          University Projects
+        </div>
+        <div class="tab" onclick="loadTabContent(event, 'content/tab3.html')">
+          Side Projects
+        </div>
       </div>
       <div id="tab-content" class="content active"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       function loadTabContent(event, fileName) {
-          document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
-          
-          const currentTab = event.currentTarget || event;
-          currentTab.classList.add('active');
-      
-          const contentContainer = document.getElementById('tab-content');
-          contentContainer.classList.add('active');
-      
-          fetch(fileName)
-              .then(response => response.text())
-              .then(data => {
-                  contentContainer.innerHTML = data;
-              })
-              .catch(err => console.log('Error loading tab content:', err));
+        document
+          .querySelectorAll(".tab")
+          .forEach((el) => el.classList.remove("active"));
+
+        const currentTab = event.currentTarget || event;
+        currentTab.classList.add("active");
+
+        const contentContainer = document.getElementById("tab-content");
+        contentContainer.classList.add("active");
+
+        fetch(fileName)
+          .then((response) => response.text())
+          .then((data) => {
+            contentContainer.innerHTML = data;
+          })
+          .catch((err) => console.log("Error loading tab content:", err));
       }
-      
-      document.addEventListener('DOMContentLoaded', function() {
-          const firstTab = document.querySelector('.tab.active');
-          loadTabContent(firstTab, 'content/tab1.html');
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const firstTab = document.querySelector(".tab.active");
+        loadTabContent(firstTab, "content/tab1.html");
       });
     </script>
   </body>
