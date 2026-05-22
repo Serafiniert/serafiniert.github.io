@@ -17,71 +17,62 @@
         <div class="img-box justify-content-center">
           <picture>
             <source
-              srcset="images/main.png"
+              srcset="images/tm_player.png"
               media="(prefers-color-scheme: dark)"
             />
-            <img src="images/main.png" class="img-fluid rounded" alt="" />
+            <img src="images/tm_player.png" class="img-fluid rounded" alt="Transfermarkt - Player screen" />
           </picture>
           <picture>
             <source
-              srcset="images/meal-planner.png"
+              srcset="images/tm_match_overview.png"
               media="(prefers-color-scheme: dark)"
             />
             <img
-              src="images/meal-planner.png"
+              src="images/tm_match_overview.png"
               class="img-fluid rounded"
-              alt=""
+              alt="Transfermarkt - Match overview"
             />
           </picture>
           <picture>
             <source
-              srcset="images/paywall.png"
+              srcset="images/tm_stadium.png"
               media="(prefers-color-scheme: dark)"
             />
-            <img src="images/paywall.png" class="img-fluid rounded" alt="" />
+            <img src="images/tm_stadium.png" class="img-fluid rounded" alt="Transfermarkt - Stadium screen" />
           </picture>
           <picture>
             <source
-              srcset="images/search.png"
+              srcset="images/tm_actions.png"
               media="(prefers-color-scheme: dark)"
             />
-            <img src="images/search.png" class="img-fluid rounded" alt="" />
+            <img src="images/tm_actions.png" class="img-fluid rounded" alt="Transfermarkt - Actions" />
           </picture>
         </div>
 
         <p>
-          At Transfermarkt, I owned the iOS app as the sole developer on the
-          platform. This meant being responsible for everything: architecture
-          decisions, release management, and CI/CD, while staying closely
-          aligned with Android, backend, and design.
+          At Transfermarkt, I had sole ownership over the iOS app — responsible
+          for architecture decisions, release management, and CI/CD, while
+          coordinating closely with Android, backend, and design.
         </p>
         <p>Key technologies and areas of ownership:</p>
         <ul class="top-ul">
           <li class="top-li">
-            Implemented new features and resolved bugs across the app
+            Migrated the CI/CD from Fastlane to Xcode Cloud
           </li>
+          <li class="top-li">Migrated to Swift 6</li>
+          <li class="top-li">Introduced SwiftLint and SwiftFormat</li>
           <li class="top-li">
-            Finished the Google Ads SDK integration, including CMP and ATT
-            consent flows, and made it production-ready
+            Multi-scheme build setup for Production, Development, and Mock
+            environments
           </li>
+          <li class="top-li">Mock layer for local development and testing</li>
           <li class="top-li">
-            Migrated the release workflow from Fastlane &amp; GitHub Actions to
-            Xcode Cloud
+            Finished Google Ads SDK integration and prepared it for release
           </li>
-          <li class="top-li">
-            Multi-scheme build setup (DEV / BETA / MOCK / PROD)
-          </li>
-          <li class="top-li">
-            Introduced SwiftLint and SwiftFormat, eliminating all compiler
-            warnings and establishing consistent code style across the project
-          </li>
-          <li class="top-li">App Store Connect &amp; release management</li>
-          <li class="top-li">
-            Cross-functional collaboration with Android, backend &amp; design
-          </li>
+          <li class="top-li">Built Match Report feature</li>
         </ul>
         <button type="button" class="btn btn-outline-primary btn-sm">
-          Swift
+          Swift 6
         </button>
         <button type="button" class="btn btn-outline-primary btn-sm">
           SwiftUI
@@ -94,6 +85,9 @@
         </button>
         <button type="button" class="btn btn-outline-primary btn-sm">
           Google Ads SDK
+        </button>
+        <button type="button" class="btn btn-outline-primary btn-sm">
+          Swift Concurrency
         </button>
       </div>
     </li>
